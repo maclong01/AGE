@@ -1,27 +1,25 @@
-# G-Retriever
+# AGE accepted as ECCV 2026 2nd Workshop on Multimodal Reasoning and Slow Thinking in the Large Model Era: Towards System 2 and Beyond
 
 [![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2402.07630)
 
-This repository contains the source code for the paper ["<u>G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering</u>"](https://arxiv.org/abs/2402.07630).
+This repository contains the source code for the paper ["<u>AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation</u>"](https://arxiv.org/abs/2607.00052).
 
-We introduce **G-Retriever**, a flexible question-answering framework targeting real-world textual graphs, applicable to multiple applications including scene graph understanding, common sense reasoning, and knowledge graph reasoning.
-<img src="figs/chat.svg">
+We introduce **AGE**, We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment.
 
-**G-Retriever** integrates the strengths of Graph Neural Networks (GNNs), Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG), and can be fine-tuned to enhance graph understanding via soft prompting.
-<img src="figs/overview.svg">
+
 
 ## News
 [2024.09] [PyG 2.6](https://github.com/pyg-team/pytorch_geometric/releases/tag/2.6.0) now supports **G-Retriever**! 🎉 \[[Dataset](https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/datasets/web_qsp_dataset.html)\]\[[Model](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.models.GRetriever.html?highlight=gretriever)\]
 
 ## Citation
 ```
-@inproceedings{
-he2024gretriever,
-title={G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering},
-author={Xiaoxin He and Yijun Tian and Yifei Sun and Nitesh V Chawla and Thomas Laurent and Yann LeCun and Xavier Bresson and Bryan Hooi},
-booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-year={2024},
-url={https://openreview.net/forum?id=MPJ3oXtTZl}
+@article{nguyenhuu2026age,
+  title={AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation},
+  author={Nguyen Huu, Bao Long and Hashimoto, Atsushi},
+  journal={arXiv preprint arXiv:2607.00052},
+  year={2026},
+  doi={10.48550/arXiv.2607.00052},
+  url={https://arxiv.org/abs/2607.00052}
 }
 ```
 
@@ -62,6 +60,9 @@ pip install protobuf
   model = AutoModel.from_pretrained("private/model", token=access_token)
   ```
 
+
+## Dataset
+Download the Dataset from https://github.com/XiaoxinHe/G-Retriever/tree/main/dataset into the dataset directory name
 
 
 
