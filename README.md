@@ -54,7 +54,7 @@ pip install protobuf
 
 
 ## Dataset
-Download the Dataset from https://github.com/XiaoxinHe/G-Retriever/tree/main/dataset and place it into the directory with the name as dataset
+Our work follows G-Retriever, so dataset come from https://github.com/XiaoxinHe/G-Retriever/tree/main/dataset and place it into the main directory "AGE/dataset" with the name dataset
 
 
 
