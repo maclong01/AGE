@@ -14,17 +14,6 @@ We accepted as ECCV 2026 Workshop MARS2! 🎉
 
 
 
-## Citation
-```
-@article{nguyenhuu2026age,
-  title={AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation},
-  author={Nguyen Huu, Bao Long and Hashimoto, Atsushi},
-  journal={arXiv preprint arXiv:2607.00052},
-  year={2026},
-  doi={10.48550/arXiv.2607.00052},
-  url={https://arxiv.org/abs/2607.00052}
-}
-```
 
 ## Environment setup
 ```
@@ -65,7 +54,7 @@ pip install protobuf
 
 
 ## Dataset
-Download the Dataset from https://github.com/XiaoxinHe/G-Retriever/tree/main/dataset into the dataset directory name
+Download the Dataset from https://github.com/XiaoxinHe/G-Retriever/tree/main/dataset and place it into the directory with the name as dataset
 
 
 
@@ -107,6 +96,18 @@ python train.py --dataset scene_graphs_baseline --model_name llm --llm_frozen Fa
 
 # G-Retriever with LoRA
 python train.py --dataset scene_graphs --model_name graph_llm --llm_frozen False
+```
+
+## Citation
+```
+@article{nguyenhuu2026age,
+  title={AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation},
+  author={Nguyen Huu, Bao Long and Hashimoto, Atsushi},
+  journal={arXiv preprint arXiv:2607.00052},
+  year={2026},
+  doi={10.48550/arXiv.2607.00052},
+  url={https://arxiv.org/abs/2607.00052}
+}
 ```
 
 ## Reproducibility
