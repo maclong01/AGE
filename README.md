@@ -9,7 +9,7 @@ We introduce **AGE**, We designed the architecture similar to text embedding enc
 
 
 ## News
-We accepted as ECCV 2026 2nd Workshop on Multimodal Reasoning and Slow Thinking in the Large Model Era: Towards System 2 and Beyond! 🎉
+We accepted as ECCV 2026 Workshop MARS2! 🎉
 
 
 
