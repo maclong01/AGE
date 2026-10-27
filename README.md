@@ -1,4 +1,4 @@
-# AGE: Combination of GraphRAG with JEPA for Enhanced LLM Reasoning via self-constructed latent graph representation.
+# AGE: Reinforcing LLMs in GraphRAG via JEPA self-constructed latent graph token.
 
 [![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2402.07630)
 
