@@ -1,4 +1,4 @@
-# Reinforcing GraphRAG via a self-constructed latent graph token represented by an RL-guided JEPA architecture.
+# Reinforcing GraphRAG via one latent graph token self-constructed by an RL-guided JEPA architecture.
 
 [![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2402.07630)
 
