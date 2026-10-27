@@ -1,10 +1,10 @@
-# Reinforcing GraphRAG via JEPA self-constructed latent graph token.
+# Reinforcing GraphRAG via a self-constructed latent graph token represented by an RL-guided JEPA architecture.
 
 [![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2402.07630)
 
 This repository contains the source code for the paper ["<u>AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation</u>"](https://arxiv.org/abs/2607.00052).
 
-We introduce **AGE**, We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment via a theoretically grounded GRAG+JEPA+RL framework.
+We introduce **AGE**, We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment in GRAG via a theoretically analyzed JEPA+RL.
 
 
 
