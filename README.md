@@ -1,6 +1,6 @@
 # Reinforcing GraphRAG via one latent graph token self-constructed by an RL-guided JEPA architecture.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2402.07630)
+[![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2607.00052) 
 
 This repository contains the source code for the paper ["<u>AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation</u>"](https://arxiv.org/abs/2607.00052).
 
