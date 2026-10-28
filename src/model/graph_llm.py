@@ -364,7 +364,7 @@ class GraphLLM(torch.nn.Module):
                 ema_param.data.mul_(self.ema_decay).add_(primary_param.data * (1.0 - self.ema_decay))
             print("EMA update") 
 
-    def forward_target(self, n_embeds):
+    def forward_target(self, n_embeds): # EMA Target
         with torch.no_grad():
             x_label = n_embeds + self.target_pos(n_embeds.transpose(1, 2)).transpose(1, 2).clone().detach()
             for encoder in self.ema_encoder:
@@ -375,13 +375,13 @@ class GraphLLM(torch.nn.Module):
 
 
     #'''
-    def forward_target(self, n_embeds):
-        with torch.no_grad():
-            x_label = n_embeds + self.encoder_pos(n_embeds.transpose(1,2)).transpose(1,2).clone().detach()
-            for encoder in self.encoder:
-                x_label = encoder(x_label)
-            x_label = self.norm_e(x_label)
-            return x_label
+    #def forward_target(self, n_embeds): # Simple Target
+    #    with torch.no_grad():
+    #        x_label = n_embeds + self.encoder_pos(n_embeds.transpose(1,2)).transpose(1,2).clone().detach()
+    #        for encoder in self.encoder:
+    #            x_label = encoder(x_label)
+    #        x_label = self.norm_e(x_label)
+    #        return x_label
     #'''
 
 
@@ -432,8 +432,8 @@ class GraphLLM(torch.nn.Module):
         B, N, C = n_embeds.shape
 
     ### Target Encoder
-        #x_label = self.forward_target(n_embeds)
-        x_label = n_embeds
+        x_label = self.forward_target(n_embeds)   # Apply Target Encoder 
+        #x_label = n_embeds                       # Target Encoder Free
 
     ### Masking guided ###
         p_x, _, mask = self.get_mask(n_embeds)
